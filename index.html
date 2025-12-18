@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Developer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="theme-toggle" class="theme-fab">
+    <span id="toggle-icon">🌙</span>
+  </button>
+
+  <main class="grid-wrapper">
+
+    <aside class="side-panel">
+      <div class="glass-card profile-card">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-side-profile-cartoon-illustration_23-2150503812.jpg" alt="Profile" class="profile-img">
+
+        <h1>Almas Shabnam</h1>
+        <p class="tagline">Full-Stack Developer</p>
+
+        <div class="status-container">
+          <span class="status-dot"></span>
+          <span>Available for Projects</span>
+        </div>
+
+        <div class="about-section">
+          <p>Aspiring developer specializing in <strong>interactive web ecosystems</strong>. I turn complex logic into elegant, user-friendly interfaces.</p>
+        </div>
+
+        <hr style="border: 0.5px solid rgba(255,255,255,0.1); margin: 25px 0;">
+
+        <div class="skills-dashboard">
+          <div class="skill-container">
+            <div class="skill-info"><span>HTML/CSS</span><span>95%</span></div>
+            <div class="progress-line"><span style="width: 95%;"></span></div>
+          </div>
+          <div class="skill-container">
+            <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+            <div class="progress-line"><span style="width: 85%;"></span></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="main-content">
+      <h2 class="section-title">Project Ecosystem</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div style="font-size: 2rem; margin-bottom: 10px;">🛒</div>
+          <h3>E-Commerce Site</h3>
+          <p>A full-stack shopping experience with dynamic cart logic.</p>
+          <a href="#" class="view-btn">View Code →</a>
+        </div>
+
+        <div class="project-card">
+          <div style="font-size: 2rem; margin-bottom: 10px;">☁️</div>
+          <h3>Weather Dashboard</h3>
+          <p>Real-time data fetching using OpenWeather API.</p>
+          <a href="https://replit.com/@almasshabnamas/WeatherDash" target="_blank" class="view-btn">Launch Demo →</a>
+        </div>
+      </div>
+
+      <div class="terminal-container">
+        <div class="terminal-box">
+          <span class="prompt">guest@portfolio:~$</span>
+          <input type="text" id="terminal-input" placeholder="type 'hello'..." autocomplete="off">
+        </div>
+        <p id="terminal-output">System: Connection secure.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
