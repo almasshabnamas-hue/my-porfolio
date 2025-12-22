@@ -115,3 +115,9 @@ body.dark-mode .progress-line { background: rgba(255,255,255,0.1); }
 .progress-line span { display: block; height: 100%; background: var(--primary); border-radius: 10px; }
 
 @media (max-width: 1000px) { .grid-wrapper { grid-template-columns: 1fr; } }
+.project-card:hover {
+    border-color: #10b981;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
