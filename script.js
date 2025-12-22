@@ -6,11 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isDark) {
             document.body.classList.add('dark-mode');
             iconSpan.innerText = '☀️';
-            themeBtn.style.background = "linear-gradient(135deg, #334155 0%, #0f172a 100%)";
         } else {
             document.body.classList.remove('dark-mode');
             iconSpan.innerText = '🌙';
-            themeBtn.style.background = "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)";
         }
     }
 
@@ -23,14 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
         updateUI(setDark);
     });
 
-    // Terminal logic
     const termInput = document.getElementById('terminal-input');
     const termOutput = document.getElementById('terminal-output');
 
     termInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             const val = termInput.value.toLowerCase();
-            termOutput.innerText = `System: Command "${val}" processed.`;
+            termOutput.innerText = `System: Command "${val}" executed.`;
             termInput.value = '';
         }
     });
